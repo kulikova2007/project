@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Анастасия Куликова — личный стилист</title>
+  <meta name="description" content="Анализ гардероба, консультации и шоппинг-сопровождение. Добро пожаловать в мой волшебный мир стиля.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&amp;family=Great+Vibes&amp;family=Montserrat:wght@300;400;500&amp;display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+
+<body class="is-locked">
+
+  <!-- ============ ЗАСТАВКА ============ -->
+  <div class="intro" id="intro" role="dialog" aria-label="Заставка">
+    <div class="intro__inner">
+      <div class="intro__frame">
+        <svg viewBox="0 0 220 280" aria-hidden="true">
+          <rect class="intro__line" x="14" y="14" width="192" height="252" rx="18" pathLength="1"/>
+          <rect class="intro__line intro__line--2" x="30" y="30" width="160" height="220" rx="10" pathLength="1"/>
+        </svg>
+        <img class="intro__bow" src="img/bow.svg" alt="" width="80" height="60">
+        <p class="intro__name"><span class="swash">А</span>настасия<br><span class="swash">К</span>уликова</p>
+      </div>
+      <p class="intro__text">добро пожаловать в мой волшебный мир стиля</p>
+      <button type="button" class="pill pill--filled" id="intro-enter">Войти</button>
+    </div>
+  </div>
+
+  <!-- ============ ШАПКА ============ -->
+  <header class="site-header" id="top">
+    <div class="bar">
+      <a class="logo" href="#top" aria-label="Анастасия Куликова — на главную"><span class="swash">А</span>.К.</a>
+
+      <nav class="nav" id="nav" aria-label="Главное меню">
+        <ul class="nav__list">
+          <li class="nav__item nav__item--sub">
+            <a class="nav__link" href="#about" aria-haspopup="true">Обо мне<span class="caret" aria-hidden="true"></span></a>
+            <ul class="nav__sub">
+              <li><a href="#about"><i>01</i>Кто я</a></li>
+              <li><a href="#approach"><i>02</i>Подход</a></li>
+              <li><a href="#numbers"><i>03</i>Опыт</a></li>
+            </ul>
+          </li>
+          <li class="nav__item nav__item--sub">
+            <a class="nav__link" href="#services" aria-haspopup="true">Услуги<span class="caret" aria-hidden="true"></span></a>
+            <ul class="nav__sub">
+              <li><a href="#service-1"><i>01</i>Анализ гардероба</a></li>
+              <li><a href="#service-2"><i>02</i>Консультация</a></li>
+              <li><a href="#service-3"><i>03</i>Шоппинг-сопровождение</a></li>
+            </ul>
+          </li>
+          <li class="nav__item"><a class="nav__link" href="#looks">Образы</a></li>
+          <li class="nav__item"><a class="nav__link" href="#contact">Контакты</a></li>
+          <li class="nav__item nav__item--cta"><a class="pill pill--filled pill--small" href="#contact">Свяжитесь со мной</a></li>
+        </ul>
+      </nav>
+
+      <button type="button" class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ ГЛАВНЫЙ ЭКРАН С ВИДЕО ============ -->
+    <section class="hero" id="hero">
+      <video class="hero__video" id="hero-video" autoplay muted loop playsinline preload="metadata" poster="video/hero-poster.jpg">
+        <source src="video/hero.mp4" type="video/mp4">
+      </video>
+      <div class="hero__tint"></div>
+      <canvas class="hero__petals" id="petals" aria-hidden="true"></canvas>
+
+      <div class="hero__inner">
+        <div class="portrait reveal">
+          <img class="portrait__photo" src="img/portrait.svg" alt="Анастасия Куликова" width="600" height="760">
+          <img class="portrait__frame" src="img/frame.svg" alt="" width="300" height="380">
+        </div>
+
+        <div class="hero__text">
+          <h1 class="hero__title reveal">
+            <span class="hero__line"><span class="swash">К</span>уликова</span>
+            <span class="hero__line hero__line--2"><span class="swash">А</span>настасия</span>
+          </h1>
+          <p class="hero__lead reveal">добро пожаловать в мой волшебный мир стиля, где элегантность всегда в тренде.</p>
+          <a class="pill pill--filled reveal" href="#contact">Свяжитесь со мной</a>
+        </div>
+      </div>
+
+      <a class="hero__scroll" href="#about" aria-label="Прокрутить вниз"><span></span></a>
+    </section>
+
+    <!-- ============ ОБО МНЕ ============ -->
+    <section class="section" id="about">
+      <div class="panel panel--split">
+        <div class="panel__text">
+          <h2 class="title reveal"><span class="swash">О</span>бо мне</h2>
+          <p class="reveal">Привет! Меня зовут Анастасия, и я — твоя очаровательная стилистка.</p>
+          <p class="reveal">Моя цель — помочь вам обрести неповторимый стиль, сочетающий в себе шарм и изысканность. Я умею использовать элементы, которые помогают подчеркнуть фигуру и создать образы, привлекающие всеобщее внимание.</p>
+        </div>
+        <div class="pill-image reveal"><img src="img/satin-1.svg" alt="Розовый атлас со шнуровкой" width="800" height="420" loading="lazy"></div>
+      </div>
+    </section>
+
+    <!-- ============ ПОДХОД ============ -->
+    <section class="section" id="approach">
+      <div class="panel">
+        <h2 class="title title--center reveal"><span class="swash">М</span>ой подход</h2>
+        <ol class="steps">
+          <li class="step reveal"><span class="step__num">01</span><h3>Знакомство</h3><p>Обсуждаем ваши предпочтения, образ жизни и цели в стиле.</p></li>
+          <li class="step reveal"><span class="step__num">02</span><h3>Анализ</h3><p>Выявляем сильные стороны фигуры и подбираем цветотип.</p></li>
+          <li class="step reveal"><span class="step__num">03</span><h3>Образы</h3><p>Собираем сочетания из вещей, которые уже есть в вашем гардеробе, и дополняем новыми.</p></li>
+        </ol>
+        <img class="panel__bow" src="img/bow.svg" alt="" width="70" height="52" loading="lazy">
+      </div>
+    </section>
+
+    <!-- ============ ОПЫТ В ЦИФРАХ ============ -->
+    <section class="section" id="numbers">
+      <div class="panel panel--pink">
+        <h2 class="title title--center reveal"><span class="swash">О</span>пыт</h2>
+        <ul class="numbers">
+          <li class="reveal"><b data-count="5" data-suffix="">0</b><span>лет в стиле и моде</span></li>
+          <li class="reveal"><b data-count="120" data-suffix="+">0</b><span>собранных образов</span></li>
+          <li class="reveal"><b data-count="40" data-suffix="+">0</b><span>довольных клиенток</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ УСЛУГИ ============ -->
+    <section class="section" id="services">
+      <div class="panel">
+        <h2 class="title title--center reveal"><span class="swash">У</span>слуги</h2>
+
+        <article class="service reveal" id="service-1">
+          <img class="service__img" src="img/heel.svg" alt="Туфелька с бантиком" width="240" height="200" loading="lazy">
+          <div class="service__body">
+            <h3>Анализ гардероба</h3>
+            <p>Вместе изучим вашу гардеробную коллекцию, выявим сильные стороны и найдём способы улучшения вашего образа.</p>
+            <p class="service__price">от 5 000 ₽</p>
+            <button type="button" class="pill pill--arrow" data-service="Анализ гардероба">Заказать<span class="arrow" aria-hidden="true"></span></button>
+          </div>
+        </article>
+
+        <article class="service service--flip reveal" id="service-2">
+          <img class="service__img" src="img/heart-bag.svg" alt="Сумочка-сердечко" width="200" height="200" loading="lazy">
+          <div class="service__body">
+            <h3>Консультация</h3>
+            <p>Обсудим ваши предпочтения, тип фигуры и цели в стиле, вместе найдём идеальный образ, подчёркивающий вашу уникальность.</p>
+            <p class="service__price">от 3 000 ₽</p>
+            <button type="button" class="pill pill--arrow" data-service="Консультация">Заказать<span class="arrow" aria-hidden="true"></span></button>
+          </div>
+        </article>
+
+        <article class="service reveal" id="service-3">
+          <img class="service__img" src="img/mirror.svg" alt="Зеркальце с бантиком" width="200" height="280" loading="lazy">
+          <div class="service__body">
+            <h3>Шоппинг-сопровождение</h3>
+            <p>Совершим захватывающее путешествие по магазинам, где я помогу вам подобрать новые наряды, подчёркивающие ваш стиль.</p>
+            <p class="service__price">от 8 000 ₽</p>
+            <button type="button" class="pill pill--arrow" data-service="Шоппинг-сопровождение">Заказать<span class="arrow" aria-hidden="true"></span></button>
+          </div>
+        </article>
+
+        <div class="pill-image pill-image--wide reveal"><img src="img/satin-2.svg" alt="Розовый атлас" width="800" height="420" loading="lazy"></div>
+      </div>
+    </section>
+
+    <!-- ============ СЛАЙДЕР ОБРАЗОВ ============ -->
+    <section class="section" id="looks">
+      <div class="panel">
+        <h2 class="title title--center reveal"><span class="swash">О</span>бразы</h2>
+
+        <div class="slider reveal" id="slider" role="region" aria-roledescription="карусель" aria-label="Образы">
+          <button type="button" class="slider__arrow slider__arrow--prev" id="slider-prev" aria-label="Назад"><span></span></button>
+          <div class="slider__viewport" id="slider-viewport">
+            <ul class="slider__track" id="slider-track">
+              <li class="slide"><figure><img src="img/look-1.svg" alt="Платье с бантом" width="400" height="500" loading="lazy" draggable="false"><figcaption><b>Утро в Париже</b><span>платье · бант на талии</span></figcaption></figure></li>
+              <li class="slide"><figure><img src="img/look-2.svg" alt="Туфельки" width="400" height="500" loading="lazy" draggable="false"><figcaption><b>Туфелька Золушки</b><span>вечерний выход</span></figcaption></figure></li>
+              <li class="slide"><figure><img src="img/look-3.svg" alt="Сумочка-сердце" width="400" height="500" loading="lazy" draggable="false"><figcaption><b>Сердце в руках</b><span>акцентная сумка</span></figcaption></figure></li>
+              <li class="slide"><figure><img src="img/look-4.svg" alt="Блуза с бантом" width="400" height="500" loading="lazy" draggable="false"><figcaption><b>Нежная блуза</b><span>офис и свидание</span></figcaption></figure></li>
+              <li class="slide"><figure><img src="img/look-5.svg" alt="Шляпка" width="400" height="500" loading="lazy" draggable="false"><figcaption><b>Летнее настроение</b><span>шляпка и лента</span></figcaption></figure></li>
+              <li class="slide"><figure><img src="img/look-6.svg" alt="Жемчужное ожерелье" width="400" height="500" loading="lazy" draggable="false"><figcaption><b>Жемчужная нить</b><span>украшения</span></figcaption></figure></li>
+              <li class="slide"><figure><img src="img/look-7.svg" alt="Флакон духов" width="400" height="500" loading="lazy" draggable="false"><figcaption><b>Шлейф аромата</b><span>завершающий штрих</span></figcaption></figure></li>
+              <li class="slide"><figure><img src="img/look-8.svg" alt="Зеркальце" width="400" height="500" loading="lazy" draggable="false"><figcaption><b>Последний взгляд</b><span>готова к выходу</span></figcaption></figure></li>
+            </ul>
+          </div>
+          <button type="button" class="slider__arrow slider__arrow--next" id="slider-next" aria-label="Вперёд"><span></span></button>
+        </div>
+        <ul class="dots" id="slider-dots" aria-label="Страницы слайдера"></ul>
+      </div>
+    </section>
+
+    <!-- ============ КОНТАКТЫ / ФОРМА ============ -->
+    <section class="section" id="contact">
+      <div class="panel panel--split panel--form">
+        <div class="panel__text">
+          <h2 class="title reveal"><span class="swash">К</span>онтакты</h2>
+          <p class="reveal">Расскажите о себе и своих пожеланиях — отвечу в течение дня.</p>
+          <img class="panel__bow panel__bow--static" src="img/bow.svg" alt="" width="90" height="68" loading="lazy">
+          <ul class="messengers reveal">
+            <li><a class="pill pill--filled" href="https://t.me/" target="_blank" rel="noopener">Telegram</a></li>
+            <li><a class="pill pill--filled" href="https://wa.me/" target="_blank" rel="noopener">WhatsApp</a></li>
+          </ul>
+        </div>
+
+        <form class="form reveal" id="contact-form" novalidate>
+          <label class="visually-hidden" for="f-name">Ваше имя</label>
+          <input class="field" type="text" id="f-name" name="name" placeholder="Ваше имя" autocomplete="name" required>
+
+          <label class="visually-hidden" for="f-contact">Телефон или Telegram</label>
+          <input class="field" type="text" id="f-contact" name="contact" placeholder="Телефон или Telegram" autocomplete="tel" required>
+
+          <label class="visually-hidden" for="f-email">E-mail</label>
+          <input class="field" type="email" id="f-email" name="email" placeholder="E-mail" autocomplete="email" required>
+
+          <fieldset class="choices">
+            <legend>Что вас интересует</legend>
+            <label class="choice"><input type="radio" name="service" value="Анализ гардероба"><span>Анализ гардероба</span></label>
+            <label class="choice"><input type="radio" name="service" value="Консультация"><span>Консультация</span></label>
+            <label class="choice"><input type="radio" name="service" value="Шоппинг-сопровождение"><span>Шоппинг</span></label>
+            <label class="choice"><input type="radio" name="service" value="Другое" checked><span>Другое</span></label>
+          </fieldset>
+
+          <label class="visually-hidden" for="f-message">Сообщение</label>
+          <textarea class="field field--area" id="f-message" name="message" rows="4" placeholder="Расскажите о ваших пожеланиях"></textarea>
+
+          <label class="agree">
+            <input type="checkbox" id="f-agree" name="agree" required>
+            <span class="agree__box"></span>
+            <span class="agree__text">Отправляя форму, я даю согласие на обработку персональных данных.</span>
+          </label>
+
+          <p class="form__message" id="form-message" role="status" aria-live="polite"></p>
+
+          <button type="submit" class="pill pill--filled pill--block" id="form-submit"><span>Отправить</span></button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <img src="img/bow.svg" alt="" width="54" height="40" loading="lazy">
+    <p>© Анастасия Куликова</p>
+    <a class="footer__top" href="#top">наверх</a>
+  </footer>
+
+</body>
+
+</html>
